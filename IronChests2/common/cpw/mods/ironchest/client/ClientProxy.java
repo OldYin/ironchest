@@ -13,7 +13,8 @@ package cpw.mods.ironchest.client;
 import java.util.Map;
 
 import net.minecraft.client.renderer.ChestItemRenderHelper;
-import net.minecraft.client.resources.ResourceLocation;
+//import net.minecraft.client.resources.ResourceLocation; //--Alex
+import net.minecraft.util.ResourceLocation; //++Alex
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
