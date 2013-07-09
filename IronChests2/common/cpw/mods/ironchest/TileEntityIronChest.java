@@ -499,10 +499,10 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
 
     }
 
-    //@Override
-    public boolean isStackValidForSlot(int i, ItemStack itemstack)
-    {
-        return true;
+    @Override
+    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+	// Method changed Alex
+	return true;
     }
 
     @Override
@@ -517,10 +517,4 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
         worldObj.addBlockEvent(xCoord, yCoord, zCoord, IronChest.ironChestBlock.blockID, 2, getFacing());
     }
     
-    @Override
-	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-		// Method Added Alex
-		return true;
-	}
-
 }
