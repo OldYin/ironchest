@@ -516,4 +516,11 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
         setFacing((byte)ForgeDirection.getOrientation(facing).getRotation(axis).ordinal());
         worldObj.addBlockEvent(xCoord, yCoord, zCoord, IronChest.ironChestBlock.blockID, 2, getFacing());
     }
+    
+    @Override
+	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+		// Method Added Alex
+		return true;
+	}
+
 }
