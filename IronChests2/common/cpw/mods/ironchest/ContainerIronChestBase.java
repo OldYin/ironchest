@@ -69,10 +69,10 @@ public class ContainerIronChestBase extends Container {
         return itemstack;
     }
 
-    @Override
-    public void onCraftGuiClosed(EntityPlayer entityplayer)
+    @Override //Changed from onCraftGuiClosed //Alex
+    public void onContainerClosed(EntityPlayer entityplayer)
     {
-        super.onCraftGuiClosed(entityplayer);
+        super.onContainerClosed(entityplayer);
         chest.closeChest();
     }
 
