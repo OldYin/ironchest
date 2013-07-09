@@ -499,7 +499,7 @@ public class TileEntityIronChest extends TileEntity implements IInventory {
 
     }
 
-    @Override
+    //@Override
     public boolean isStackValidForSlot(int i, ItemStack itemstack)
     {
         return true;
